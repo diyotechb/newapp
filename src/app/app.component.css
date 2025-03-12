@@ -1,0 +1,22 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .image-container img {
+    max-width: 50%; /* Adjust size */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  
+    border-top: 8px solid #333; /* Thick top border */
+    border-bottom: 8px solid #333; /* Thick bottom border */
+    
+    margin-top: 50px;  /* Space above the image */
+    margin-bottom: 50px; /* Space below the image */
+    padding: 10px; /* Inner spacing */
+  }
+  
