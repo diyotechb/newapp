@@ -1,22 +1,45 @@
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #f8f9fa; /* Light background */
-  }
-  
-  .image-container img {
-    max-width: 50%; /* Adjust size */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
-  
-    border-top: 8px solid #333; /* Thick top border */
-    border-bottom: 8px solid #333; /* Thick bottom border */
-    
-    margin-top: 50px;  /* Space above the image */
-    margin-bottom: 50px; /* Space below the image */
-    padding: 10px; /* Inner spacing */
-  }
-  
+/* Wrapper takes full viewport height */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height */
+}
+
+/* Content expands to push the footer down */
+.content {
+  flex: 1; /* Pushes footer to the bottom */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Logo Styling */
+.logo {
+  width: 500px;
+  height: auto;
+}
+
+/* Footer stays at the bottom but does NOT overlap */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  position: relative; /* Removes overlap */
+  margin-top: auto; /* Pushes footer down */
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decorat;
+}
+
+.toolbar{
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  position: relative; /* Removes overlap */
+  margin:auto;
+}
